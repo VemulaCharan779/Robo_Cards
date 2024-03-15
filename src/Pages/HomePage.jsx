@@ -2,12 +2,19 @@
 import React from "react";
 import CardComponent from "../Components/CardComponent";
 import "../Components/Card.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SingleCard from "../Components/SingleCard";
 
 const HomePage = () => {
     return (
-        <div> 
-            <CardComponent />
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<CardComponent />} />
+                <Route path="/item/:name/:email" element={<SingleCard />} />
+
+
+            </Routes>
+        </BrowserRouter>
     );
 }
 

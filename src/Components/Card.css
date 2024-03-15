@@ -36,3 +36,17 @@
 .card img {
     width: 200px;
 }   
+
+.singleCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(155, 155, 155);
+    width: 50vw;
+    height: 60vh;
+    margin: 10% 27%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
